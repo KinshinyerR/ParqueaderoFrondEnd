@@ -99,23 +99,35 @@ function salida(inputplaca) {
           infoSalida.textContent = "";
         }, 5000);
       }
-      if (res.contratoMensual) {
-        infoSalida.textContent = "Muchas gracias por su visita";
-      }
-      infoSalida.textContent = "Salida Exitosa";
-      inputPlacaE.value = "";
-      Einfo.innerHTML = `
-        <p>Placa: ${res.placa}</p>
-        <p>Color: ${res.color}</p>
-        <p>Hora de ingreso: ${res.horaIngreso}</p>
-        <p>Hora de salida: ${res.horaSalida}</p>
-        <p>Contrato Mensual: ${res.contratoMensual}</p>  
-        <p>Valor a pagar: ${res.valorAPagar}</p>  
+      console.log(res.contratoMensual);
+      if (!res.contratoMensual) {
+        infoSalida.textContent = "Salida Exitosa";
+        inputPlacaE.value = "";
+        Einfo.innerHTML = `
+          <p>Placa: ${res.placa}</p>
+          <p>Color: ${res.color}</p>
+          <p>Hora de ingreso: ${res.horaIngreso}</p>
+          <p>Hora de salida: ${res.horaSalida}</p>
+          <p>Contrato Mensual: ${res.contratoMensual}</p>
+          <p>Valor a pagar: ${res.valorAPagar}</p>
         `;
+      }
+      if (res.contratoMensual) {
+        infoSalida.textContent = "Salida Exitosa";
+        inputPlacaE.value = "";
+        Einfo.innerHTML = `
+          <p>Placa: ${res.placa}</p>
+          <p>Color: ${res.color}</p>
+          <p>Hora de ingreso: ${res.horaIngreso}</p>
+          <p>Hora de salida: ${res.horaSalida}</p>
+          <p>Contrato Mensual: ${res.contratoMensual}</p>
+          <p>Valor a pagar:GRACIAS POR VISITARNOS</p>
+        `;
+      }
       setTimeout(() => {
         Einfo.innerHTML = ``;
         infoSalida.textContent = "";
-      }, 5000);
+      }, 10000);
     })
     .catch((error) => console.log("error", error));
 }

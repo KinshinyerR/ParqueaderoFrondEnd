@@ -49,8 +49,11 @@ main {
       .info {
         font-size: 20px;
         margin-top: 20px;
+        p {
+          font-weight: bold;
+        }
       }
-      .Pinfo{
+      .Pinfo {
         margin-top: 10px;
         color: $naranja;
         font-size: 15px;

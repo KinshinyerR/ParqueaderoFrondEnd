@@ -117,6 +117,11 @@ main .formularios .form .info {
   margin-top: 20px;
 }
 
+main .formularios form .info p,
+main .formularios .form .info p {
+  font-weight: bold;
+}
+
 main .formularios form .Pinfo,
 main .formularios .form .Pinfo {
   margin-top: 10px;
