@@ -44,7 +44,7 @@ function registrar(inputplaca, inputcolor) {
     redirect: "follow",
   };
 
-  fetch("http://localhost:3000/users/entry", requestOptions)
+  fetch("https://parqueadero-kr.herokuapp.com/users/entry", requestOptions)
     .then((response) => response.json())
     .then((res) => {
       console.log(res);
@@ -88,7 +88,7 @@ function salida(inputplaca) {
     redirect: "follow",
   };
 
-  fetch("http://localhost:3000/users/exit", requestOptions)
+  fetch("https://parqueadero-kr.herokuapp.com/users/exit", requestOptions)
     .then((response) => response.json())
     .then((res) => {
       console.log(res);
@@ -136,7 +136,7 @@ function create(
     nombreConductor: inputconductor,
     pagoMensual: inputmes,
   };
-  fetch(`http://localhost:3000/clients/create`, {
+  fetch(`https://parqueadero-kr.herokuapp.com/clients/create`, {
     method: "post",
     body: JSON.stringify(data),
     headers: { "Content-type": "application/json; charset=UTF-8" },
@@ -172,7 +172,7 @@ function create(
 }
 
 function read(inputplaca) {
-  fetch(`http://localhost:3000/clients/getbyid/${inputplaca}`)
+  fetch(`https://parqueadero-kr.herokuapp.com/clients/getbyid/${inputplaca}`)
     .then((res) => res.json())
     .then((json) => {
       console.log(json);
@@ -208,7 +208,7 @@ function update(
     nombreConductor: inputconductor,
     pagoMensual: inputmes,
   };
-  fetch(`http://localhost:3000/clients/update`, {
+  fetch(`https://parqueadero-kr.herokuapp.com/clients/update`, {
     method: "put",
     body: JSON.stringify(data),
     headers: { "Content-type": "application/json; charset=UTF-8" },
@@ -238,7 +238,7 @@ function update(
 }
 
 function funtDelete(inputplaca) {
-  fetch(`http://localhost:3000/clients/delete/${inputplaca}`, {
+  fetch(`https://parqueadero-kr.herokuapp.com/clients/delete/${inputplaca}`, {
     method: "delete",
   })
     .then((res) => {

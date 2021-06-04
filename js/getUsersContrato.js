@@ -2,7 +2,7 @@ const btnUserContra = document.querySelector(".btnUserContra");
 
 btnUserContra.addEventListener("click", (e) => {
   e.preventDefault();
-  fetch(`http://localhost:3000/users/getContrato`)
+  fetch(`https://parqueadero-kr.herokuapp.com/users/getContrato`)
     .then((response) => response.json())
     .then((json) => {
       console.log(json);
