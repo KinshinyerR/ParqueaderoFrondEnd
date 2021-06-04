@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Parqueadero</title>
+    <link rel="shortcut icon" href="img/parqueadero.png" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="#"
+          ><img class="logo" src="img/parqueadero.png" alt="Logo"
+        /></a>
+      </div>
+      <h1>MI PARQUEADERO</h1>
+      <nav>
+        <ul>
+          <li><a class="item" href="clientes.html">CLIENTES</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="formularios">
+        <div class="form entrada">
+          <h2>Registro de Entrada</h2>
+          <form action="">
+            <input id="inputPlacaR" type="text" placeholder="PLACA" />
+            <input id="inputColorR" type="text" placeholder="COLOR" />
+            <div class="btn btnRegistrar"><a href="#">INGRESAR</a></div>
+            <div class="info" id="Rinfo">
+            </div>
+            <p class="Pinfo"id="infoRegistro"></p>
+          </form>
+        </div>
+        <div class="form salida">
+          <h2>Registro de Salida</h2>
+          <form action="">
+            <input id="inputPlacaE" type="text" placeholder="PLACA" />
+            <div class="btn btnExit"><a href="">SALIDA</a></div>
+            <div class="info" id="Einfo">
+              <!-- <p>Placa: <span id="placaSal"></span></p>
+              <p>Color: <span id="colorSal"></span></p>
+              <p>Hora de ingreso: <span id="horaI"></span></p>
+              <p>Hora de salida: <span id="horaS"></span></p>
+              <p>Contrato Mensual: <span id="contratoSal"></span></p>
+              <p>Valor a pagar: <span id="valorSal"></span></p> -->
+            </div>
+            <p class="Pinfo"id="infoSalida"></p>
+          </form>
+        </div>
+      </section>
+
+      <section class="pedidos">
+        <h2>Vehículos en el parqueadero</h2>
+        <div class="contenedorInfo">
+          <div class="solicitud">
+            <h2>Vehículos</h2>
+            <ul>
+              <li><a class="btnUserAll" href="">Todos los vehículos</a></li>
+              <li><a class="btnUserContra" href="">Con MENSUALIDAD</a></li>
+              <li><a class="btnUserNoContra" href="">Sin MENSUALIDAD</a></li>
+            </ul>
+          </div>
+          <div class="contenedorUsers"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="redes">
+        <p>Redes:</p>
+        <a id="inst" href="https://www.instagram.com/kishinyerr/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a id="face" href="https://www.facebook.com/kishinyer.restrepo/"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a id="twit" href="https://twitter.com/KinshinyerRestr"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+        <a id="git" href="https://github.com/KinshinyerR"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a id="what" href="https://api.whatsapp.com/send?phone=+573226757304"
+          ><i class="fab fa-whatsapp-square"></i
+        ></a>
+      </div>
+      <div class="derechos">
+        <p>&copy; KinshinyerR 2021 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="js/functions.js"></script>
+    <script src="js/getUsers.js"></script>
+    <script src="js/getUsersAll.js"></script>
+    <script src="js/getUsersContrato.js"></script>
+    <script src="js/getUsersNoContrato.js"></script>
+    <script src="js/postUsers.js"></script>
+    <script src="js/exitUsers.js"></script>
+  </body>
+</html>

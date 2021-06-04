@@ -1,0 +1,99 @@
+#clientes {
+  .sectionClientes {
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    .contenedorClientes {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      .cliente {
+        width: 220px;
+        padding: 20px;
+        border-radius: 15px;
+        margin: 14px;
+        background-color: $blanco;
+        transition: all 0.3s ease;
+        p {
+          font-weight: bold;
+        }
+        &:hover {
+          transform: scale(1.2, 1.2);
+        }
+      }
+    }
+  }
+
+  .sectionCrud {
+    h2 {
+      margin: 30px;
+      text-align: center;
+    }
+    .crud {
+      display: flex;
+      justify-content: space-around;
+      form {
+        display: flex;
+        flex-direction: column;
+        background-color: $blanco;
+        padding: 20px;
+        border-radius: 15px;
+        p {
+          font-size: 15px;
+          font-weight: bold;
+          margin: 10px 0;
+        }
+        .pInfo {
+          text-align: center;
+          color: $naranja;
+        }
+        input {
+          font-family: "Montserrat", sans-serif;
+          font-weight: bolder;
+          height: 30px;
+          border-radius: 10px;
+          margin: 10px 0;
+          font-size: 15px;
+          padding-left: 10px;
+          outline: none;
+          &::placeholder {
+            color: #000;
+            font-size: 15px;
+          }
+        }
+        .btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border: 1px solid $naranja;
+          border-radius: 25px;
+          height: 25px;
+          margin-top: 10px;
+          a {
+            font-size: 15px;
+            color: $naranja;
+            letter-spacing: 0;
+            text-align: center;
+            text-decoration: none;
+            font-weight: bold;
+          }
+        }
+        .info {
+          font-size: 15px;
+          font-weight: bold;
+          margin: 10px 0;
+          p {
+            color: $negro;
+          }
+          .pInfo {
+            text-align: center;
+            color: $naranja;
+          }
+        }
+      }
+    }
+  }
+}

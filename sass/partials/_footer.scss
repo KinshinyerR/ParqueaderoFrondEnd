@@ -1,0 +1,36 @@
+footer {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .redes {
+    display: flex;
+    align-items: center;
+    p {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    a {
+      margin: 0 15px;
+      color: $negro;
+    }
+    #inst:hover {
+      color: $morado;
+    }
+    #face:hover {
+      color: $azul;
+    }
+    #twit:hover {
+      color: $azulClaro;
+    }
+    #git:hover {
+      color: $naranja;
+    }
+    #what:hover {
+      color: $verde;
+    }
+  }
+  .derechos {
+    font-weight: 700;
+  }
+}

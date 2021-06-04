@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px;
+  .logo {
+    width: 50px;
+  }
+  h1 {
+    font-size: 60px;
+    color: $negro;
+  }
+  li {
+    list-style: none;
+    .item {
+      text-decoration: none;
+      color: $negro;
+      font-size: 20px;
+      font-weight: bold;
+      &:hover {
+        text-decoration-line: underline;
+        text-decoration-color: $negro;
+      }
+      &:active {
+        text-decoration: none;
+        color: #9cafc3;
+      }
+    }
+  }
+}

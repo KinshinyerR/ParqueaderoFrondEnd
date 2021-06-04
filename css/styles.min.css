@@ -1,0 +1,354 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../../img/parking4.jpg");
+  background-size: 100%;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 60px;
+}
+
+header .logo {
+  width: 50px;
+}
+
+header h1 {
+  font-size: 60px;
+  color: #000;
+}
+
+header li {
+  list-style: none;
+}
+
+header li .item {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header li .item:hover {
+  text-decoration-line: underline;
+  text-decoration-color: #000;
+}
+
+header li .item:active {
+  text-decoration: none;
+  color: #9cafc3;
+}
+
+main .formularios {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px 150px;
+}
+
+main .formularios form,
+main .formularios .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+main .formularios form h2,
+main .formularios .form h2 {
+  font-size: 40px;
+}
+
+main .formularios form input,
+main .formularios .form input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  height: 50px;
+  border-radius: 10px;
+  margin: 10px 0;
+  font-size: 15px;
+  padding-left: 10px;
+  outline: none;
+}
+
+main .formularios form input::placeholder,
+main .formularios .form input::placeholder {
+  color: #000;
+  font-size: 15px;
+}
+
+main .formularios form .btn,
+main .formularios .form .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fd491c;
+  border-radius: 25px;
+  width: 127px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+main .formularios form .btn a,
+main .formularios .form .btn a {
+  font-size: 20px;
+  color: #fd491c;
+  letter-spacing: 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main .formularios form .info,
+main .formularios .form .info {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+main .formularios form .Pinfo,
+main .formularios .form .Pinfo {
+  margin-top: 10px;
+  color: #fd491c;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+main .pedidos {
+  display: flex;
+  flex-direction: column;
+}
+
+main .pedidos h2 {
+  text-align: center;
+  font-size: 50px;
+  color: #000;
+}
+
+main .pedidos .contenedorInfo {
+  display: flex;
+  margin: 50px auto;
+}
+
+main .pedidos .contenedorInfo .solicitud {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
+  height: 200px;
+  margin-right: 10px;
+}
+
+main .pedidos .contenedorInfo .solicitud h2 {
+  font-size: 30px;
+  color: #000;
+}
+
+main .pedidos .contenedorInfo .solicitud ul {
+  padding: 0;
+}
+
+main .pedidos .contenedorInfo .solicitud ul li {
+  list-style: none;
+  margin: 20px;
+}
+
+main .pedidos .contenedorInfo .solicitud ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+main .pedidos .contenedorInfo .solicitud ul li a:hover {
+  color: #fd491c;
+}
+
+main .pedidos .contenedorInfo .contenedorUsers {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+}
+
+main .pedidos .contenedorInfo .contenedorUsers .user {
+  margin: 0 10px 10px;
+  padding: 10px;
+  height: 100px;
+  border-radius: 15px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+main .pedidos .contenedorInfo .contenedorUsers .user p {
+  font-weight: bold;
+}
+
+main .pedidos .contenedorInfo .contenedorUsers .user:hover {
+  transform: scale(1.1, 1.1);
+}
+
+#clientes .sectionClientes h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#clientes .sectionClientes .contenedorClientes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+#clientes .sectionClientes .contenedorClientes .cliente {
+  width: 220px;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 14px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+#clientes .sectionClientes .contenedorClientes .cliente p {
+  font-weight: bold;
+}
+
+#clientes .sectionClientes .contenedorClientes .cliente:hover {
+  transform: scale(1.2, 1.2);
+}
+
+#clientes .sectionCrud h2 {
+  margin: 30px;
+  text-align: center;
+}
+
+#clientes .sectionCrud .crud {
+  display: flex;
+  justify-content: space-around;
+}
+
+#clientes .sectionCrud .crud form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+#clientes .sectionCrud .crud form p {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#clientes .sectionCrud .crud form .pInfo {
+  text-align: center;
+  color: #fd491c;
+}
+
+#clientes .sectionCrud .crud form input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bolder;
+  height: 30px;
+  border-radius: 10px;
+  margin: 10px 0;
+  font-size: 15px;
+  padding-left: 10px;
+  outline: none;
+}
+
+#clientes .sectionCrud .crud form input::placeholder {
+  color: #000;
+  font-size: 15px;
+}
+
+#clientes .sectionCrud .crud form .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fd491c;
+  border-radius: 25px;
+  height: 25px;
+  margin-top: 10px;
+}
+
+#clientes .sectionCrud .crud form .btn a {
+  font-size: 15px;
+  color: #fd491c;
+  letter-spacing: 0;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#clientes .sectionCrud .crud form .info {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#clientes .sectionCrud .crud form .info p {
+  color: #000;
+}
+
+#clientes .sectionCrud .crud form .info .pInfo {
+  text-align: center;
+  color: #fd491c;
+}
+
+footer {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .redes {
+  display: flex;
+  align-items: center;
+}
+
+footer .redes p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer .redes a {
+  margin: 0 15px;
+  color: #000;
+}
+
+footer .redes #inst:hover {
+  color: #ea00ff;
+}
+
+footer .redes #face:hover {
+  color: #191ddf;
+}
+
+footer .redes #twit:hover {
+  color: rgba(64, 210, 255, 0.527);
+}
+
+footer .redes #git:hover {
+  color: #fd491c;
+}
+
+footer .redes #what:hover {
+  color: #15ff00;
+}
+
+footer .derechos {
+  font-weight: 700;
+}
+/*# sourceMappingURL=styles.min.css.map */

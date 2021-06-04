@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+$naranja: #fd491c;
+$blanco: #fff;
+$negro: #000;
+$morado: rgb(234, 0, 255);
+$azul: rgb(25, 29, 223);
+$azulClaro: rgba(64, 210, 255, 0.527);
+$verde: rgb(21, 255, 0);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url('../../img/parking4.jpg');
+  background-size: 100%;
+  height: 100%;
+}

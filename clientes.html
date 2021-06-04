@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clientes</title>
+    <link rel="shortcut icon" href="img/parqueadero.png" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a href="index.html"
+          ><img class="logo" src="img/parqueadero.png" alt="Logo"
+        /></a>
+      </div>
+      <h1>MI PARQUEADERO</h1>
+      <nav>
+        <ul>
+          <li><a class="item" href="index.html">REGISTRO</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="clientes">
+      <section class="sectionClientes">
+        <h2>Clientes</h2>
+        <div class="contenedorClientes"></div>
+      </section>
+
+      <section class="sectionCrud">
+        <h2>CRUD PARA CLIENTES</h2>
+        <div class="crud">
+          <div class="create">
+            <form action="">
+              <h3>Registrar Vehículo</h3>
+              <p>Todos los campos son OBLIGATORIOS*</p>
+              <input id="inputPlaca" type="text" placeholder="PLACA" />
+              <input id="inputMarca" type="text" placeholder="MARCA" />
+              <input id="inputModelo" type="text" placeholder="MODELO" />
+              <input id="inputColor" type="text" placeholder="COLOR" />
+              <input id="inputConductor" type="text" placeholder="CONDUCTOR" />
+              <input id="inputMes" type="text" placeholder="MENSUALIDAD" />
+              <div class="btn btnCreate"><a href="#">REGISTRAR</a></div>
+              <p class="pInfo" id="infoCreate">info</p>
+            </form>
+          </div>
+          <div class="read">
+            <form action="">
+              <h3>Traer Vehículo</h3>
+              <p>El campo PLACA es OBLIGATORIO*</p>
+              <input id="inputPlacaR" type="text" placeholder="PLACA" />
+              <div class="btn btnRead"><a href="">CONSULTAR</a></div>
+              <div class="info">
+                <p class="pInfo" id="infoRead">info</p>
+              </div>
+            </form>
+          </div>
+          <div class="update">
+            <form action="">
+              <h3>Actualizar Vehículo</h3>
+              <p>Todos los campos son OBLIGATORIOS*</p>
+              <input id="inputPlacaU" type="text" placeholder="PLACA" />
+              <input id="inputMarcaU" type="text" placeholder="MARCA" />
+              <input id="inputModeloU" type="text" placeholder="MODELO" />
+              <input id="inputColorU" type="text" placeholder="COLOR" />
+              <input id="inputConductorU" type="text" placeholder="CONDUCTOR" />
+              <input id="inputMesU" type="text" placeholder="MENSUALIDAD" />
+              <div class="btn btnUpdate"><a href="">ACTUALIZAR</a></div>
+              <p id="infoUpdate" class="pInfo">info</p>
+            </form>
+          </div>
+          <div class="delete">
+            <form action="">
+              <h3>Eliminar Vehículo</h3>
+              <p>El campo PLACA es OBLIGATORIO*</p>
+              <input id="inputPlacaD" type="text" placeholder="PLACA" />
+              <div class="btn btnDelete"><a href="">ELIMINAR</a></div>
+              <p id="infoDelete" class="pInfo">info</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="redes">
+        <p>Redes:</p>
+        <a id="inst" href="https://www.instagram.com/kishinyerr/"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a id="face" href="https://www.facebook.com/kishinyer.restrepo/"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a id="twit" href="https://twitter.com/KinshinyerRestr"
+          ><i class="fab fa-twitter-square"></i
+        ></a>
+        <a id="git" href="https://github.com/KinshinyerR"
+          ><i class="fab fa-github"></i
+        ></a>
+        <a id="what" href="https://api.whatsapp.com/send?phone=+573226757304"
+          ><i class="fab fa-whatsapp-square"></i
+        ></a>
+      </div>
+      <div class="derechos">
+        <p>&copy; KinshinyerR 2021 All Rights Reserved</p>
+      </div>
+    </footer>
+
+    <script src="js/functions.js"></script>
+    <script src="js/getClientes.js"></script>
+    <script src="js/createCliente.js"></script>
+    <script src="js/readCliente.js"></script>
+    <script src="js/updateClient.js"></script>
+    <script src="js/deleteCliente.js"></script>
+  </body>
+</html>
